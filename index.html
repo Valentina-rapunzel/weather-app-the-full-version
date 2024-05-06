@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meteo App Fully</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="src/style.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <!-- <h1>Welcome to my new weather app</h1>
+    <h2>It's being coded at the moment</h2>
+    <h3>It's coming out soon, be patient😉</h3> -->
+
+    <div class="app-container">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            class="search-form-input"
+            type="search"
+            placeholder="Enter a city..."
+            required
+            id="search-form-input"
+          />
+          <input
+            class="search-form-button"
+            type="submit"
+            value="Search"
+            id="search-form-button"
+          />
+        </form>
+        <div class="line">
+          <hr />
+        </div>
+      </header>
+
+      <main>
+        <div class="app-data">
+          <div>
+            <h1 class="app-city" id="app-city"></h1>
+            <p class="app-details">
+              <span class="date" id="date"></span> <br />
+              <span class="time" id="time"></span>
+              <span class="description" id="description"></span>
+              <br />
+              <span>
+                Humidity: <strong class="humidity" id="humidity"></strong>,
+                Wind: <strong class="wind" id="wind"></strong
+              ></span>
+            </p>
+          </div>
+          <div class="app-temperature">
+            <div id="icon"></div>
+            <div class="app-temperature-value" id="app-temperature-value"></div>
+            <div class="app-temperature-unit">°C</div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Valentina-rapunzel" target="_blank"
+          >Valentina Rapunzel</a
+        >
+        , published on
+        <a
+          href="https://github.com/Valentina-rapunzel/meteo-app"
+          target="_blank"
+          >GitHub</a
+        >
+        and website hosted on
+        <a
+          href="https://meteo-app-valentina-rapunzel.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
