@@ -76,13 +76,14 @@ a:hover {
     rgb(228, 251, 236) 100.7%
   );
 }
+
 .line {
   width: 100%;
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 main {
-  padding: 30px 0;
+  padding: 10px 0 20px 0;
 }
 .app-data {
   display: flex;
@@ -110,6 +111,23 @@ strong.wind {
   font-size: 16px;
   font-weight: 900;
 }
+.weather-forcast-container {
+  text-align: center;
+  color: #551a8b;
+}
+.weather-forcast-day {
+  font-size: 20px;
+  opacity: 0.8;
+  color: #b660d2;
+  font-weight: 800;
+}
+.weather-forecast-temperature {
+  font-size: 18px;
+}
+.forcast-temperature-min {
+  opacity: 0.6;
+}
+
 .app-temperature {
   display: flex;
 }
