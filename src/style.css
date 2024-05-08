@@ -111,17 +111,23 @@ strong.wind {
   font-size: 16px;
   font-weight: 900;
 }
+
 .weather-forcast-container {
-  text-align: center;
   color: #551a8b;
+  text-align: center;
 }
-.weather-forcast-day {
+.weather-forecast-day {
   font-size: 20px;
   opacity: 0.8;
   color: #b660d2;
   font-weight: 800;
+  margin-left: 10px;
 }
-.weather-forecast-temperature {
+.weather-forcast-icon {
+  font-size: 50px;
+}
+.weather-forecast-temperatures {
+  margin-left: 10px;
   font-size: 18px;
 }
 .forcast-temperature-min {
