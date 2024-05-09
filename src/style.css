@@ -37,7 +37,7 @@ a:hover {
   );
   max-width: 500px;
   margin: 30px auto;
-  padding: 50px 30px;
+  padding: 30px;
   border-radius: 30px;
   box-shadow: 0 30px 50px rgba(208, 228, 251, 0.7);
 }
@@ -53,7 +53,7 @@ a:hover {
   );
   border-color: #c5e2fb;
   border-radius: 5px;
-  width: 30%;
+  width: 50%;
   padding: 5px 10px;
   font-size: 14px;
 }
@@ -83,7 +83,7 @@ a:hover {
   padding-top: 20px;
 }
 main {
-  padding: 10px 0 20px 0;
+  padding: 10px 0 10px 0;
 }
 .app-data {
   display: flex;
@@ -91,12 +91,13 @@ main {
 }
 .app-city {
   margin: 0;
-  font-size: 34px;
-  line-height: 44px;
+  font-size: 36px;
+  line-height: 40px;
   color: #170328;
 }
+/* Time details  */
 .app-details {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   font-weight: 600;
   color: rgba(45, 30, 59, 0.7);
@@ -108,53 +109,66 @@ span {
 strong.humidity,
 strong.wind {
   color: #735193;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 900;
 }
-
-.weather-forcast-container {
-  color: #551a8b;
-  text-align: center;
-}
-.weather-forecast-day {
-  font-size: 20px;
-  opacity: 0.8;
-  color: #b660d2;
-  font-weight: 800;
-  margin-left: 10px;
-}
-.weather-forcast-icon {
-  font-size: 50px;
-}
-.weather-forecast-temperatures {
-  margin-left: 10px;
-  font-size: 18px;
-}
-.forcast-temperature-min {
-  opacity: 0.6;
-}
+/* temperature details   */
 
 .app-temperature {
   display: flex;
 }
 .app-icon {
-  margin-top: 20px;
+  margin-top: 50px;
   font-size: 64px;
 }
+
 .app-temperature-value {
-  margin-top: 60px;
+  margin-top: 100px;
   font-size: 80px;
   color: #170328;
 }
 .app-temperature-unit {
   font-size: 64px;
-  margin-top: 60px;
+  margin-top: 100px;
   color: #170328;
 }
 .icon {
   width: 130px;
   height: 130px;
   margin-top: 20px;
+}
+/* weather forecast  */
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  text-align: center;
+
+  color: #551a8b;
+}
+
+.weather-forecast-day {
+  font-size: 20px;
+  opacity: 0.8;
+  color: #b660d2;
+  font-weight: 800;
+}
+.weather-forecast-date {
+  font-size: 24px;
+  color: #833b8e;
+  opacity: 0.7;
+}
+.weather-forecast-icon {
+  font-size: 60px;
+}
+.weather-forecast-temperatures {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 24px;
+}
+.forcast-temperature-min {
+  opacity: 0.6;
 }
 
 footer {
