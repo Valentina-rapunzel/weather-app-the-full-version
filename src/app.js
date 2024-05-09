@@ -110,7 +110,7 @@ searchCity("Reethi Rah");
 function displayForecast() {
   let forecastElement = document.querySelector("#weather-forecast");
 
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   let forecastHtml = "";
   days.forEach(function (day) {
     forecastHtml =
