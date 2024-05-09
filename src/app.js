@@ -108,8 +108,6 @@ searchCity("Reethi Rah");
 // weather forecast
 
 function displayForecast() {
-  let forecastElement = document.querySelector("#weather-forecast");
-
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   let forecastHtml = "";
   days.forEach(function (day) {
@@ -125,6 +123,8 @@ function displayForecast() {
   </div>
       `;
   });
+
+  let forecastElement = document.querySelector("#weather-forecast");
   forecastElement.innerHTML = forecastHtml;
 }
 
