@@ -133,12 +133,12 @@ strong.wind {
   opacity: 0.7;
 }
 .weather-forecast-icon {
-  font-size: 60px;
+  width: 100%;
 }
 .weather-forecast-temperatures {
   margin-top: 10px;
   margin-left: 10px;
-  font-size: 24px;
+  font-size: 16px;
 }
 .weather-forecast-temperature-min {
   opacity: 0.8;
