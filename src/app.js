@@ -19,7 +19,7 @@ function refreshWeather(response) {
   let description = response.data.condition.description;
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = description;
-
+  // Inject an icon
   let iconElement = document.querySelector("#icon");
   let icon = `<img src="${response.data.condition.icon_url}" class="icon"/>`;
   iconElement.innerHTML = `${icon}`;
@@ -105,4 +105,27 @@ timeElement.innerHTML = showCurrentTime(currentTime);
 // to show a default city
 searchCity("Reethi Rah");
 
-// Inject an icon
+// weather forecast
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-day">
+    <div class="weather-forecast-date">${day}</div>
+    <div class="weather-forecast-icon">⛅</div>
+    <div class="weather-forecast-temperatures">
+      <span class="weather-forecast-temperature-max"> <strong> 18°</strong></span>
+      <span class="weather-forecast-temperature-min">15°</span>
+    </div>
+  </div>
+      `;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
