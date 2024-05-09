@@ -106,6 +106,11 @@ timeElement.innerHTML = showCurrentTime(currentTime);
 searchCity("Reethi Rah");
 
 // weather forecast
+function getForecast(city) {
+  let apiKey = "b30a2d9fef22b5o0t83182be74814ec8";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+  axios(apiUrl).then(displayForecast);
+}
 
 function displayForecast() {
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
