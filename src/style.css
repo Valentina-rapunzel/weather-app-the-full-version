@@ -19,6 +19,7 @@ body {
   box-shadow: 0 30px 50px rgba(208, 228, 251, 0.7);
 }
 /* search form  */
+
 .search-form-input {
   background: radial-gradient(
     328px at 2.9% 15%,
@@ -29,16 +30,16 @@ body {
     rgb(240, 251, 244) 100.7%
   );
   border-color: #c5e2fb;
-  border-radius: 5px;
+  border-radius: 30px;
   width: 50%;
-  padding: 5px 10px;
+  padding: 10px 20px;
   font-size: 14px;
 }
 .search-form-button {
   border-color: #c5e2fb;
   color: #170328;
-  border-radius: 5px;
-  padding: 5px 10px;
+  border-radius: 30px;
+  padding: 10px 20px;
   font-size: 14px;
 }
 .search-form-button:hover {
@@ -74,11 +75,18 @@ main {
 }
 /* Time details  */
 .app-details {
-  margin: 20px 0 20px;
+  margin: 15px 0 15px 0;
   font-size: 20px;
   line-height: 24px;
   font-weight: 600;
   color: rgba(45, 30, 59, 0.7);
+}
+.time,
+.date {
+  color: #ad10c9;
+  opacity: 0.8;
+  font-weight: 900;
+  font-size: 22px;
 }
 span {
   color: #b266b6;
@@ -95,7 +103,7 @@ strong.wind {
 }
 .app-icon {
   margin-top: 50px;
-  font-size: 64px;
+  width: 100%;
 }
 .app-temperature-value {
   margin-top: 100px;

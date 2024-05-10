@@ -96,7 +96,7 @@ function showCurrentTime(number) {
   if (hours < 10) {
     hours = `0${hours}`;
   }
-  let clock = `Time: ${hours}:${minutes},`;
+  let clock = `Time: ${hours}:${minutes}`;
   return `${clock}`;
 }
 
